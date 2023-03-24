@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:visited {
+  font-weight: 100;
+}
+body {
+  background-color: #000;
+  color: #00FF00;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+body > p, a {
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #00FF00;
+}
+body > p {
+  align-self: flex-start;
+}
+body > a {
+  align-self: flex-end;
+}
+#outer-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100vw;
+  height: fit-content;
+}
+::selection {
+  color: #000;
+  background-color: #00FF00;
+}
+#init-art {
+  font-weight: bold;
+  font-size: inherit;
+}
+#init-text > a {
+  color: #00FF00;
+  font-size: inherit;
+}
+#init-deco {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: inherit;
+  opacity: 100%;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
