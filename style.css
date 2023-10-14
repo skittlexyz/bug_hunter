@@ -60,6 +60,7 @@ body > a {
   font-size: inherit;
 }
 #init-deco {
+  margin-top: 50px !important;
   display: flex;
   justify-content: center;
   padding: 5px;
